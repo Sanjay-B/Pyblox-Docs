@@ -1,4 +1,5 @@
 .. currentmodule:: pyblox
+.. _about:
 
 About
 ---------------
