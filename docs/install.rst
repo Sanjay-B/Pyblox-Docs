@@ -1,4 +1,4 @@
-.. currentmodule:: pyblox
+.. _installation:
 
 Installation
 ---------------
