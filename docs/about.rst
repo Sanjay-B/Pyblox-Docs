@@ -1,7 +1,7 @@
-.. _About:
+.. _about:
 
 About
----------------
+===========
 
 Pyblox was created in hopes of providing novice to high level coders a proper interface
 that's easy to understand. Pyblox handles all requests, parses the responses and returns
