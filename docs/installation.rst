@@ -1,7 +1,7 @@
 .. _installation:
 
 Installation
----------------
+=============
 
 **Windows**
 To install Pyblox, you must do the following:
