@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Pyblox Documentation &mdash; Pyblox 0.0.2 documentation</title>
+  <title>Installation &mdash; Pyblox 0.0.2 documentation</title>
   
 
   
@@ -37,8 +37,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Pyblox 0.0.2 documentation" href="#"/>
-        <link rel="next" title="About" href="about.html"/> 
+    <link rel="top" title="Pyblox 0.0.2 documentation" href="index.html"/>
+        <link rel="next" title="Reference" href="reference.html"/>
+        <link rel="prev" title="About" href="about.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -57,7 +58,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Pyblox
+            <a href="index.html" class="icon icon-home"> Pyblox
           
 
           
@@ -91,9 +92,9 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a></li>
 </ul>
 
@@ -109,7 +110,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Pyblox</a>
+          <a href="index.html">Pyblox</a>
         
       </nav>
 
@@ -137,15 +138,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Pyblox Documentation</li>
+      <li>Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -158,17 +159,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pyblox-documentation">
-<h1>Pyblox Documentation<a class="headerlink" href="#pyblox-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="assets.html">class <code class="docutils literal notranslate"><span class="pre">pyblox.api.assets.Assets</span></code></a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p><strong>Windows</strong>
+To install Pyblox, you must do the following:</p>
+<ol class="arabic simple">
+<li>Download or Clone <a class="reference external" href="https://github.com/Sanjay-B/Pyblox">https://github.com/Sanjay-B/Pyblox</a></li>
+<li>Place the “pyblox” folder into <code class="docutils literal notranslate"><span class="pre">Lib\site-packages</span></code>.</li>
+</ol>
+<p>if you don’t know where it is,run this script in Python:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="go">print(sys.exec_prefix)</span>
+</pre></div>
+</div>
+<p>and you will find <code class="docutils literal notranslate"><span class="pre">Lib\site-packages</span></code> inside.</p>
+<p>MacOS and Linux are supported but installation will vary.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This was developed on a windows-based machine and thus, it’s recommended to use windows.</p>
+</div>
+<p><strong>Example</strong>
+Once installed, you can call the wrapper and all of its modules:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyblox</span>
+</pre></div>
+</div>
+<p>To call a specific class from the wrapper:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyblox</span> <span class="kn">import</span> <span class="n">CLASSNAME</span>
+</pre></div>
+</div>
+<p>A basic example that utilizes the Friend class:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyblox</span> <span class="c1"># Imports the API Wrapper</span>
+
+<span class="k">def</span> <span class="nf">GetFriendUN</span><span class="p">():</span>
+    <span class="n">CoolPeople</span> <span class="o">=</span> <span class="n">Friends</span><span class="o">.</span><span class="n">friendList</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Gets Friends List</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">CoolPeople</span><span class="p">)</span> <span class="c1"># Returns usernames and prints them on console</span>
+
+<span class="n">GetFriendsUN</span><span class="p">()</span> <span class="c1"># Calls &quot;GetFriendUN&quot; method</span>
+</pre></div>
 </div>
 </div>
 
@@ -182,8 +209,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="about.html" class="btn btn-neutral float-right" title="About" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="reference.html" class="btn btn-neutral float-right" title="Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="about.html" class="btn btn-neutral" title="About" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -6,10 +6,16 @@ Installation
 **Windows**
 To install Pyblox, you must do the following:
 
-1. `Download or Clone <https://github.com/Sanjay-B/Pyblox>`_
-2. Place the "pyblox" folder into C:\Users\YOURUSERNAMEON
-WINDOWSMACHINE\AppData\Local\Programs\Python\PYTHONVERSION
-\Lib\site-packages
+1. Download or Clone https://github.com/Sanjay-B/Pyblox
+
+2. Place the "pyblox" folder into ``Lib\site-packages``.
+
+if you don't know where it is,run this script in Python:
+
+>>> import sys
+print(sys.exec_prefix)
+
+and you will find ``Lib\site-packages`` inside.
 
 MacOS and Linux are supported but installation will vary.
 

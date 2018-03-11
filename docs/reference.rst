@@ -14,9 +14,8 @@ The official Roblox API urls can be found `here <http://wiki.roblox.com/index.ph
     with the Roblox API. Could be unstable. I will make zero effort
     in making this backward-compatible.
 
-Assets
----------------
+.. toctree::
+    :maxdepth: 1
 
-The Asset class serves to provide the user with Asset-specific information.
-
+    assets
 
