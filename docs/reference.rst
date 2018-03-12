@@ -18,4 +18,4 @@ The official Roblox API urls can be found `here <http://wiki.roblox.com/index.ph
     :maxdepth: 1
 
     assets
-
+    friends
